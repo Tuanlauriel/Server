@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <top>
+      <Pane id="pane-top" prefHeight="42.0" prefWidth="600.0" style="-fx-background-color: #388bff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="257.0" layoutY="8.0" text="SERVER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="265.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="ipLb" layoutX="7.0" layoutY="3.0" prefHeight="17.0" prefWidth="180.0" textFill="#ab0635">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="portLb" layoutX="7.0" layoutY="22.0" prefHeight="17.0" prefWidth="180.0" textFill="#ab0635">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeLb" alignment="CENTER" layoutX="530.0" layoutY="4.0" prefHeight="22.0" prefWidth="70.0" text="--:--" textFill="#158e1d">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Pane layoutX="126.0" layoutY="41.0" prefHeight="292.0" prefWidth="349.0" style="-fx-background-color: #2eafa4;">
+               <children>
+                  <TextArea fx:id="infoTA" editable="false" layoutX="3.0" layoutY="3.0" prefHeight="286.0" prefWidth="343.0" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </Pane>
+         </children></Pane>
+   </center>
+</BorderPane>
